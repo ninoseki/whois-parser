@@ -1,0 +1,81 @@
+% IANA WHOIS server
+% for more information on IANA, visit http://www.iana.org
+% This query returned 1 object
+
+refer:        whois.jprs.jp
+
+domain:       JP
+
+organisation: Japan Registry Services Co., Ltd.
+address:      Chiyoda First Bldg. East 13F,
+address:      3-8-1 Nishi-Kanda
+address:      Chiyoda-ku Tokyo 101-0065
+address:      Japan
+
+contact:      administrative
+name:         Koki Higashida
+organisation: Japan Registry Services Co., Ltd.
+address:      Chiyoda First Bldg. East 13F,
+address:      3-8-1 Nishi-Kanda
+address:      Chiyoda-ku Tokyo 101-0065
+address:      Japan
+phone:        +81 3 5215 8451
+fax-no:       +81 3 5215 8452
+e-mail:       higashida@jprs.co.jp
+
+contact:      technical
+name:         Koki Higashida
+organisation: Japan Registry Services Co., Ltd.
+address:      Chiyoda First Bldg. East 13F,
+address:      3-8-1 Nishi-Kanda
+address:      Chiyoda-ku Tokyo 101-0065
+address:      Japan
+phone:        +81 3 5215 8480
+fax-no:       +81 3 5215 8452
+e-mail:       tech-admin@jprs.jp
+
+nserver:      A.DNS.JP 2001:dc4:0:0:0:0:0:1 203.119.1.1
+nserver:      B.DNS.JP 2001:dc2:0:0:0:0:0:1 202.12.30.131
+nserver:      C.DNS.JP 156.154.100.5 2001:502:ad09:0:0:0:0:5
+nserver:      D.DNS.JP 2001:240:0:0:0:0:0:53 210.138.175.244
+nserver:      E.DNS.JP 192.50.43.53 2001:200:c000:0:0:0:0:35
+nserver:      F.DNS.JP 150.100.6.8 2001:2f8:0:100:0:0:0:153
+nserver:      G.DNS.JP 203.119.40.1
+nserver:      H.DNS.JP 2a01:8840:1ba:0:0:0:0:25 65.22.40.25
+ds-rdata:     46369 8 2 39F054DCB3EC1E93D8AE6D8F1AAAD91794055EA36895045FAF6F65F02FEBC579
+
+whois:        whois.jprs.jp
+
+status:       ACTIVE
+remarks:      Registration information: https://jprs.jp/
+
+created:      1986-08-05
+changed:      2020-11-09
+source:       IANA
+
+# whois.jprs.jp
+
+[ JPRS database provides information on network administration. Its use is    ]
+[ restricted to network administration purposes. For further information,     ]
+[ use 'whois -h whois.jprs.jp help'. To suppress Japanese output, add'/e'     ]
+[ at the end of command, e.g. 'whois -h whois.jprs.jp xxx/e'.                 ]
+
+Domain Information: [ドメイン情報]
+a. [ドメイン名]                 GOOGLE.CO.JP
+e. [そしきめい]                 ぐーぐるごうどうかいしゃ
+f. [組織名]                     グーグル合同会社
+g. [Organization]               Google Japan G.K.
+k. [組織種別]                   合同会社
+l. [Organization Type]          GK
+m. [登録担当者]                 YN47525JP
+n. [技術連絡担当者]             SH36113JP
+p. [ネームサーバ]               ns1.google.com
+p. [ネームサーバ]               ns2.google.com
+p. [ネームサーバ]               ns3.google.com
+p. [ネームサーバ]               ns4.google.com
+s. [署名鍵]                     
+[状態]                          Connected (2022/03/31)
+[登録年月日]                    2001/03/22
+[接続年月日]                    2001/03/22
+[最終更新]                      2021/04/01 01:05:22 (JST)
+

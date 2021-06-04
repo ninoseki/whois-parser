@@ -1,0 +1,119 @@
+% IANA WHOIS server
+% for more information on IANA, visit http://www.iana.org
+% This query returned 1 object
+
+refer:        whois.dns.be
+
+domain:       BE
+
+organisation: DNS Belgium vzw/asbl
+address:      Ubicenter, Philipssite 5, bus 13
+address:      Leuven  3001
+address:      Belgium
+
+contact:      administrative
+name:         CEO
+organisation: DNS Belgium vzw/asbl
+address:      Ubicenter, Philipssite 5, bus 13
+address:      Leuven  3001
+address:      Belgium
+phone:        +32 16 28 49 70
+fax-no:       +32 16 28 49 71
+e-mail:       iana-admin@dnsbelgium.be
+
+contact:      technical
+name:         CTO
+organisation: DNS Belgium vzw/asbl
+address:      Ubicenter, Philipssite 5, bus 13
+address:      Leuven  3001
+address:      Belgium
+phone:        +32 16 28 49 70
+fax-no:       +32 16 28 49 71
+e-mail:       iana-tech@dnsbelgium.be
+
+nserver:      A.NSSET.BE 194.0.6.1 2001:678:9:0:0:0:0:1
+nserver:      B.NSSET.BE 194.0.37.1 2001:678:64:0:0:0:0:1
+nserver:      C.NSSET.BE 194.0.43.1 2001:678:68:0:0:0:0:1
+nserver:      D.NSSET.BE 194.0.44.1 2001:678:6c:0:0:0:0:1
+nserver:      Y.NSSET.BE 120.29.253.8 2001:dcd:7:0:0:0:0:8
+nserver:      Z.NSSET.BE 194.0.25.36 2001:678:20:0:0:0:0:36
+ds-rdata:     12664 8 2 75141E9B1188A95A7A855BF47E278A742A5E3F2DDEED8E995D749D48F2F0E72D
+ds-rdata:     52756 8 2 5485AC33DD7C7ED237EA2A4BD269731C816960FE181042024484B5CECA6ECC9F
+
+whois:        whois.dns.be
+
+status:       ACTIVE
+remarks:      Registration information: https://www.dnsbelgium.be
+
+created:      1988-08-05
+changed:      2021-03-22
+source:       IANA
+
+# whois.dns.be
+
+% .be Whois Server 6.1
+%
+% The WHOIS service offered by DNS Belgium and the access to the records in the DNS Belgium
+% WHOIS database are provided for information purposes only. It allows
+% persons to check whether a specific domain name is still available or not
+% and to obtain information related to the registration records of
+% existing domain names.
+%
+% DNS Belgium cannot, under any circumstances, be held liable where the stored
+% information would prove to be incomplete or inaccurate in any sense.
+%
+% By submitting a query you agree not to use the information made available
+% to:
+%   - allow, enable or otherwise support the transmission of unsolicited,
+%     commercial advertising or other solicitations whether via email or otherwise;
+%   - target advertising in any possible way;
+%   - to cause nuisance in any possible way to the domain name holders by sending 
+%     messages to them (whether by automated, electronic processes capable of
+%     enabling high volumes or other possible means).
+% 
+% Without prejudice to the above, it is explicitly forbidden to extract, copy
+% and/or use or re-utilise in any form and by any means (electronically or
+% not) the whole or a quantitatively or qualitatively substantial part
+% of the contents of the WHOIS database without prior and explicit permission
+% by DNS Belgium, nor in any attempt thereof, to apply automated, electronic
+% processes to DNS Belgium (or its systems).
+%
+% You agree that any reproduction and/or transmission of data for commercial
+% purposes will always be considered as the extraction of a substantial
+% part of the content of the WHOIS database.
+%
+% By submitting the query you agree to abide by this policy and accept that
+% DNS Belgium can take measures to limit the use of its whois services in order to
+% protect the privacy of its registrants or the integrity of the database.
+%
+
+Domain:	google.be
+Status:	NOT AVAILABLE
+Registered:	Tue Dec 12 2000
+
+Registrant:
+	Not shown, please visit www.dnsbelgium.be for webbased whois.
+
+Registrar Technical Contacts:
+	Organisation:	MarkMonitor Inc.
+	Language:	en
+	Phone:	+1.2083895740
+	Fax:	+1.2083895771
+
+
+Registrar:
+	Name:	 MarkMonitor Inc.
+	Website: http://www.markmonitor.com
+
+Nameservers:
+	ns2.google.com
+	ns1.google.com
+	ns4.google.com
+	ns3.google.com
+
+Keys:
+
+Flags:
+	clientTransferProhibited
+
+Please visit www.dnsbelgium.be for more info.
