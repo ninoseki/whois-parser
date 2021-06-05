@@ -1,5 +1,9 @@
 # whois-parser
 
+[![PyPI version](https://badge.fury.io/py/whois-parser.svg)](https://badge.fury.io/py/whois-parser)
+[![Python CI](https://github.com/ninoseki/whois-parser/actions/workflows/test.yml/badge.svg)](https://github.com/ninoseki/whois-parser/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/ninoseki/whois-parser/badge.svg?branch=main)](https://coveralls.io/github/ninoseki/whois-parser?branch=main)
+
 Yet another whois parser for Python. 🐍
 
 - Parse a whois record by using [PyParsing](https://github.com/pyparsing/pyparsing/) not Regex.
