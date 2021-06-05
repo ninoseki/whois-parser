@@ -33,6 +33,15 @@ class WhoisParser:
     def parse(
         self, raw_text: str, *, hostname: Optional[str] = None
     ) -> dataclasses.WhoisRecord:
+        """Parse a whois record and return it as a data class object
+
+        Args:
+            raw_text (str): Whois record
+            hostname (Optional[str], optional): Defaults to None.
+
+        Returns:
+            dataclasses.WhoisRecord:
+        """
         tld: Optional[str] = None
         if hostname is not None:
             tld = hostname.split(".")[-1]
