@@ -11,7 +11,7 @@ repos:
           ]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.19.0
+    rev: v2.29.0
     hooks:
       - id: pyupgrade
         args: [--py37-plus]
@@ -24,7 +24,7 @@ repos:
         args: ["--ignore=E501,W503,E203"]
 
   - repo: https://github.com/timothycrosley/isort
-    rev: 5.8.0
+    rev: 5.9.3
     hooks:
       - id: isort
         additional_dependencies: [toml]
@@ -32,6 +32,6 @@ repos:
         args: ["--profile", "black"]
 
   - repo: https://github.com/psf/black
-    rev: 21.5b1
+    rev: 21.9b0
     hooks:
       - id: black
