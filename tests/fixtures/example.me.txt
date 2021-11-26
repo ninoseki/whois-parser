@@ -1,0 +1,189 @@
+% IANA WHOIS server
+% for more information on IANA, visit http://www.iana.org
+% This query returned 1 object
+
+refer:        whois.nic.me
+
+domain:       ME
+
+organisation: Government of Montenegro
+address:      Rimski trg 46
+address:      Podgorica  81000
+address:      Montenegro
+
+contact:      administrative
+name:         Božo Krstajić
+organisation: University of Montenegro, Faculty of Electrical Engineering
+address:      Džordža Vašingtona bb
+address:      Podgorica 81000
+address:      Montenegro
+phone:        +382 67 313 222
+e-mail:       bozok@ac.me
+
+contact:      technical
+name:         TLD Tech
+organisation: Center of Information System (CIS)
+organisation: University of Montenegro
+address:      Cetinjski put 2
+address:      Podgorica  81000
+address:      Montenegro
+phone:        +382 20 414 290
+fax-no:       +382 20 414 283
+e-mail:       tldtech@ac.me
+
+nserver:      A0.NIC.ME 199.253.59.1 2001:500:53:0:0:0:0:1
+nserver:      A2.NIC.ME 199.249.119.1 2001:500:47:0:0:0:0:1
+nserver:      B0.NIC.ME 199.253.60.1 2001:500:54:0:0:0:0:1
+nserver:      B2.NIC.ME 199.249.127.1 2001:500:4f:0:0:0:0:1
+nserver:      C0.NIC.ME 199.253.61.1 2001:500:55:0:0:0:0:1
+ds-rdata:     45352 8 2 7708c8a6d5d72b63214bbff50cb54553f7e07a1fa5e9074bd8d63c43102d8559
+
+whois:        whois.nic.me
+
+status:       ACTIVE
+remarks:      Registration information: http://www.domain.me
+
+created:      2007-09-24
+changed:      2020-10-19
+source:       IANA
+
+# whois.nic.me
+
+Domain Name: ACCLINE.ME
+Registry Domain ID: D425500000338269671-AGRS
+Registrar WHOIS Server: whois.atakteknoloji.com
+Registrar URL: www.atakdomain.com
+Updated Date:
+Creation Date: 2021-11-25T02:48:55Z
+Registry Expiry Date: 2022-11-25T02:48:55Z
+Registrar Registration Expiration Date:
+Registrar: Atak Domain Hosting Internet ve Bilgi Teknolojileri Limited Sirketi d/b/a Atak Teknoloji
+Registrar IANA ID: 1601
+Registrar Abuse Contact Email: abuse@atakdomain.com
+Registrar Abuse Contact Phone: +90.2623259222
+Reseller:
+Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+Domain Status: addPeriod https://icann.org/epp#addPeriod
+Registrant Organization: n/a
+Registrant State/Province: Shandong
+Registrant Country: CN
+Name Server: ANDY.NS.CLOUDFLARE.COM
+Name Server: SUE.NS.CLOUDFLARE.COM
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of WHOIS database: 2021-11-25T07:48:09Z <<<
+
+# whois.atakteknoloji.com
+
+Domain Name: accline.me
+Registry Domain ID: D425500000338269671-AGRS
+Registrar WHOIS Server: whois.apiname.com
+Registrar URL: http://apiname.com
+Updated Date: 
+Creation Date: 2021-11-25T02:48:55Z
+Registrar Registration Expiration Date: 2022-11-25T02:48:55Z
+Registrar: Atak Domain
+Registrar IANA ID: 1601
+Registrar Abuse Contact Email: domain@apiname.com
+Registrar Abuse Contact Phone: +90.2623259222
+Reseller: W
+Domain Status: http://www.icann.org/epp#serverTransferProhibited
+Registry Registrant ID:
+Registrant Name: Domain Administrator
+Registrant Organization: Registrant of accline.me
+Registrant Street: 72 Chase Side, Suite 2, London, United Kingdom, N14 5PH
+Registrant City: London
+Registrant State/Province: Chase Side
+Registrant Postal Code: N14 5PH
+Registrant Country: GB
+Registrant Phone: +44.7520644531
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registry Admin ID:
+Admin Name: Domain Administrator
+Admin Organization: Admin of accline.me
+Admin Street: 72 Chase Side, Suite 2, London, United Kingdom, N14 5PH
+Admin City: London
+Admin State/Province: Chase Side
+Admin Postal Code: N14 5PH
+Admin Country: GB
+Admin Phone: +44.7520644531
+Admin Phone Ext:
+Admin Fax:
+Admin Fax Ext:
+Registry Tech ID:
+Tech Name: Domain Techistrator
+Tech Organization: Tech of accline.me
+Tech Street: 72 Chase Side, Suite 2, London, United Kingdom, N14 5PH
+Tech City: London
+Tech State/Province: Chase Side
+Tech Postal Code: N14 5PH
+Tech Country: GB
+Tech Phone: +44.7520644531
+Tech Phone Ext:
+Tech Fax:
+Tech Fax Ext:
+Name Server: andy.ns.cloudflare.com
+Name Server: sue.ns.cloudflare.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2021-11-25T05:49:49.180Z <<<
+
+# whois.apiname.com
+
+Domain Name: accline.me
+Registry Domain ID: D425500000338269671-AGRS
+Registrar WHOIS Server: whois.apiname.com
+Registrar URL: http://apiname.com
+Updated Date: 
+Creation Date: 2021-11-25T02:48:55Z
+Registrar Registration Expiration Date: 2022-11-25T02:48:55Z
+Registrar: Atak Domain
+Registrar IANA ID: 1601
+Registrar Abuse Contact Email: domain@apiname.com
+Registrar Abuse Contact Phone: +90.2623259222
+Reseller: W
+Domain Status: http://www.icann.org/epp#serverTransferProhibited
+Registry Registrant ID:
+Registrant Name: Domain Administrator
+Registrant Organization: Registrant of accline.me
+Registrant Street: 72 Chase Side, Suite 2, London, United Kingdom, N14 5PH
+Registrant City: London
+Registrant State/Province: Chase Side
+Registrant Postal Code: N14 5PH
+Registrant Country: GB
+Registrant Phone: +44.7520644531
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registry Admin ID:
+Admin Name: Domain Administrator
+Admin Organization: Admin of accline.me
+Admin Street: 72 Chase Side, Suite 2, London, United Kingdom, N14 5PH
+Admin City: London
+Admin State/Province: Chase Side
+Admin Postal Code: N14 5PH
+Admin Country: GB
+Admin Phone: +44.7520644531
+Admin Phone Ext:
+Admin Fax:
+Admin Fax Ext:
+Registry Tech ID:
+Tech Name: Domain Techistrator
+Tech Organization: Tech of accline.me
+Tech Street: 72 Chase Side, Suite 2, London, United Kingdom, N14 5PH
+Tech City: London
+Tech State/Province: Chase Side
+Tech Postal Code: N14 5PH
+Tech Country: GB
+Tech Phone: +44.7520644531
+Tech Phone Ext:
+Tech Fax:
+Tech Fax Ext:
+Name Server: andy.ns.cloudflare.com
+Name Server: sue.ns.cloudflare.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2021-11-25T05:49:49.180Z <<<
+
