@@ -8,7 +8,7 @@ repository = "https://github.com/ninoseki/whois-parser"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6.2"
 dateparser = "^1.1.0"
 dataclasses-json = "0.5.5"
 pyparsing = "3.0.6"
