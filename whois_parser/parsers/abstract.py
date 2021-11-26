@@ -2,9 +2,10 @@ from abc import ABC, abstractmethod
 from datetime import datetime
 from typing import List, Optional, Type, Union
 
-from pyparsing import ParserElement, Regex, White
+from pyparsing import ParserElement
 
 from .. import dataclasses
+from .constants import ANY_CHARACTERS, DEILIMITER, SPACE_OR_TAB
 from .utils import build_common_prefix_pattern, find, find_all, parse_datetime
 
 
@@ -172,8 +173,8 @@ class AbstractParser(ABC):
         self,
         prefix: Type[ParserElement],
         *,
-        delimiter: Optional[Type[ParserElement]] = White(),
-        target: Type[ParserElement] = Regex(".+")
+        delimiter: Optional[Type[ParserElement]] = SPACE_OR_TAB,
+        target: Type[ParserElement] = ANY_CHARACTERS
     ) -> Optional[str]:
         """Find text which matches with PyParsing expression
 
@@ -195,8 +196,8 @@ class AbstractParser(ABC):
         self,
         prefix: Type[ParserElement],
         *,
-        delimiter: Optional[Type[ParserElement]] = White(),
-        target: Type[ParserElement] = Regex(".+")
+        delimiter: Optional[Type[ParserElement]] = SPACE_OR_TAB,
+        target: Type[ParserElement] = ANY_CHARACTERS
     ) -> Optional[Union[str, datetime]]:
         """Find text which matches with PyParsing expression and return it as a datetime
 
@@ -218,8 +219,8 @@ class AbstractParser(ABC):
         self,
         prefix: Type[ParserElement],
         *,
-        delimiter: Optional[Type[ParserElement]] = White(),
-        target: Type[ParserElement] = Regex(".+")
+        delimiter: Optional[Type[ParserElement]] = SPACE_OR_TAB,
+        target: Type[ParserElement] = ANY_CHARACTERS
     ) -> List[str]:
         """Find a list of text which matches with a PyParsing expression
 
@@ -241,7 +242,7 @@ class AbstractParser(ABC):
         self,
         keywords: List[str],
         *,
-        delimiter: Optional[str] = ":",
+        delimiter: Optional[str] = DEILIMITER,
         is_case_sensitive: bool = False,
         is_line_start_sensitive: bool = True
     ) -> Optional[str]:
@@ -274,7 +275,7 @@ class AbstractParser(ABC):
         self,
         keywords: List[str],
         *,
-        delimiter: Optional[str] = ":",
+        delimiter: Optional[str] = DEILIMITER,
         is_case_sensitive: bool = False,
         is_line_start_sensitive: bool = True
     ) -> Optional[Union[datetime, str]]:
@@ -307,7 +308,7 @@ class AbstractParser(ABC):
         self,
         keywords: List[str],
         *,
-        delimiter: Optional[str] = ":",
+        delimiter: Optional[str] = DEILIMITER,
         is_case_sensitive: bool = False,
         is_line_start_sensitive: bool = True
     ) -> List[str]:
