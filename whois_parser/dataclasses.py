@@ -1,47 +1,41 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import List, Optional, Union
+from typing import Optional, Union
 
-from dataclasses_json import dataclass_json
+from dataclasses_json import DataClassJsonMixin
 
 
-@dataclass_json
 @dataclass
-class Contact:
+class Contact(DataClassJsonMixin):
     organization: Optional[str] = None
     email: Optional[str] = None
     name: Optional[str] = None
     telephone: Optional[str] = None
 
 
-@dataclass_json
 @dataclass
 class Tech(Contact):
     pass
 
 
-@dataclass_json
 @dataclass
 class Registrant(Contact):
     pass
 
 
-@dataclass_json
 @dataclass
 class Admin(Contact):
     pass
 
 
-@dataclass_json
 @dataclass
 class Abuse:
     email: Optional[str] = None
     telephone: Optional[str] = None
 
 
-@dataclass_json
 @dataclass
-class WhoisRecord:
+class WhoisRecord(DataClassJsonMixin):
     raw_text: str
 
     registrant: Registrant
@@ -49,8 +43,8 @@ class WhoisRecord:
     tech: Tech
     abuse: Abuse
 
-    statuses: List[str] = field(default_factory=list)
-    name_servers: List[str] = field(default_factory=list)
+    statuses: list[str] = field(default_factory=list)
+    name_servers: list[str] = field(default_factory=list)
 
     domain: Optional[str] = None
     registrar: Optional[str] = None

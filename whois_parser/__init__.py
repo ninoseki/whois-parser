@@ -1,8 +1,4 @@
-try:
-    import importlib.metadata as importlib_metadata
-except ModuleNotFoundError:
-    import importlib_metadata
-
+import importlib.metadata as importlib_metadata
 
 from whois_parser.parser import WhoisParser  # noqa
 

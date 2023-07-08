@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List, Optional, Union
+from typing import Optional, Union
 
 from .base import BaseParser
 from .utils import build_common_prefix_pattern
@@ -42,7 +42,7 @@ class JpParser(BaseParser):
         )
         return self._find_datetime(prefix, delimiter=None)
 
-    def _find_statuses(self) -> List[str]:
+    def _find_statuses(self) -> list[str]:
         prefix = build_common_prefix_pattern(
             "[状態]",
             is_line_start_sensitive=False,
@@ -50,7 +50,7 @@ class JpParser(BaseParser):
         )
         return self._find_all(prefix, delimiter=None)
 
-    def _find_name_servers(self) -> List[str]:
+    def _find_name_servers(self) -> list[str]:
         prefix = build_common_prefix_pattern(
             "[ネームサーバ]",
             is_line_start_sensitive=False,
