@@ -1,8 +1,15 @@
 from datetime import datetime
-from typing import List, Optional, Union, cast
+from typing import Optional, Union, cast
 
 import dateparser
-from pyparsing import And, CaselessLiteral, LineStart, Literal, White, ZeroOrMore
+from pyparsing import (
+    CaselessLiteral,
+    LineStart,
+    Literal,
+    ParserElement,
+    White,
+    ZeroOrMore,
+)
 
 
 def build_common_prefix_pattern(
@@ -11,7 +18,7 @@ def build_common_prefix_pattern(
     delimiter: Optional[str] = ":",
     is_case_sensitive: bool = False,
     is_line_start_sensitive: bool = True
-) -> And:
+) -> ParserElement:
     prefix = Literal(keyword) if is_case_sensitive else CaselessLiteral(keyword)
 
     grammar = prefix + ZeroOrMore(White())
@@ -25,7 +32,7 @@ def build_common_prefix_pattern(
     return grammar
 
 
-def find(text: str, grammar: And, *, id: str = "value") -> Optional[str]:
+def find(text: str, grammar: ParserElement, *, id: str = "value") -> Optional[str]:
     results = grammar.scanString(text, maxMatches=1)
     for tokens, _start, _end in results:
         value = tokens.asDict().get(id)
@@ -34,8 +41,8 @@ def find(text: str, grammar: And, *, id: str = "value") -> Optional[str]:
     return None
 
 
-def find_all(text: str, grammar: And, *, id: str = "value") -> List[str]:
-    values: List[str] = []
+def find_all(text: str, grammar: ParserElement, *, id: str = "value") -> list[str]:
+    values: list[str] = []
 
     results = grammar.scanString(text)
     for tokens, _start, _end in results:

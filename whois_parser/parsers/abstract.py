@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
-from typing import List, Optional, Type, Union
+from typing import Optional, Union
 
 from pyparsing import ParserElement
 
@@ -32,7 +32,7 @@ def normalize_raw_text(raw_text: str) -> str:
     if sharp_index is None:
         return raw_text
 
-    lines: List[str] = []
+    lines: list[str] = []
     for line in reversed_lines[:sharp_index]:
         lines.append(line.strip())
 
@@ -154,7 +154,7 @@ class AbstractParser(ABC):
         """
 
     @abstractmethod
-    def _find_statuses(self) -> List[str]:
+    def _find_statuses(self) -> list[str]:
         """Find a list of status filed
 
         Returns:
@@ -162,7 +162,7 @@ class AbstractParser(ABC):
         """
 
     @abstractmethod
-    def _find_name_servers(self) -> List[str]:
+    def _find_name_servers(self) -> list[str]:
         """Find a list of name server field
 
         Returns:
@@ -171,10 +171,10 @@ class AbstractParser(ABC):
 
     def _find(
         self,
-        prefix: Type[ParserElement],
+        prefix: ParserElement,
         *,
-        delimiter: Optional[Type[ParserElement]] = SPACE_OR_TAB,
-        target: Type[ParserElement] = ANY_CHARACTERS
+        delimiter: Optional[ParserElement] = SPACE_OR_TAB,
+        target: ParserElement = ANY_CHARACTERS
     ) -> Optional[str]:
         """Find text which matches with PyParsing expression
 
@@ -194,10 +194,10 @@ class AbstractParser(ABC):
 
     def _find_datetime(
         self,
-        prefix: Type[ParserElement],
+        prefix: ParserElement,
         *,
-        delimiter: Optional[Type[ParserElement]] = SPACE_OR_TAB,
-        target: Type[ParserElement] = ANY_CHARACTERS
+        delimiter: Optional[ParserElement] = SPACE_OR_TAB,
+        target: ParserElement = ANY_CHARACTERS
     ) -> Optional[Union[str, datetime]]:
         """Find text which matches with PyParsing expression and return it as a datetime
 
@@ -217,11 +217,11 @@ class AbstractParser(ABC):
 
     def _find_all(
         self,
-        prefix: Type[ParserElement],
+        prefix: ParserElement,
         *,
-        delimiter: Optional[Type[ParserElement]] = SPACE_OR_TAB,
-        target: Type[ParserElement] = ANY_CHARACTERS
-    ) -> List[str]:
+        delimiter: Optional[ParserElement] = SPACE_OR_TAB,
+        target: ParserElement = ANY_CHARACTERS
+    ) -> list[str]:
         """Find a list of text which matches with a PyParsing expression
 
         Args:
@@ -240,7 +240,7 @@ class AbstractParser(ABC):
 
     def _find_by_keywords(
         self,
-        keywords: List[str],
+        keywords: list[str],
         *,
         delimiter: Optional[str] = DEILIMITER,
         is_case_sensitive: bool = False,
@@ -273,7 +273,7 @@ class AbstractParser(ABC):
 
     def _find_datetime_by_keywords(
         self,
-        keywords: List[str],
+        keywords: list[str],
         *,
         delimiter: Optional[str] = DEILIMITER,
         is_case_sensitive: bool = False,
@@ -306,12 +306,12 @@ class AbstractParser(ABC):
 
     def _find_all_by_keywords(
         self,
-        keywords: List[str],
+        keywords: list[str],
         *,
         delimiter: Optional[str] = DEILIMITER,
         is_case_sensitive: bool = False,
         is_line_start_sensitive: bool = True
-    ) -> List[str]:
+    ) -> list[str]:
         """Find a list of text which matches with a keyword
 
         Args:

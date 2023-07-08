@@ -1,6 +1,6 @@
 repos:
-  - repo: https://github.com/humitos/mirrors-autoflake
-    rev: v1.3
+  - repo: https://github.com/pycqa/autoflake
+    rev: v2.2.0
     hooks:
       - id: autoflake
         args:
@@ -11,27 +11,37 @@ repos:
           ]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.29.1
+    rev: v3.9.0
     hooks:
       - id: pyupgrade
-        args: [--py37-plus]
+        args: [--py3-plus]
 
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 4.0.1
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
     hooks:
       - id: flake8
         additional_dependencies: [flake8-print]
         args: ["--ignore=E501,W503,E203"]
 
-  - repo: https://github.com/timothycrosley/isort
-    rev: 5.10.1
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
     hooks:
       - id: isort
-        additional_dependencies: [toml]
-        exclude: ^.*/?setup\.py$
         args: ["--profile", "black"]
 
   - repo: https://github.com/psf/black
-    rev: 21.11b1
+    rev: 23.3.0
     hooks:
       - id: black
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.4.0
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - types-all
+
+  - repo: https://github.com/andrei-shabanski/poetry-plugin-sort
+    rev: v0.2.0
+    hooks:
+      - id: poetry-sort

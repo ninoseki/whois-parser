@@ -1,4 +1,4 @@
-from typing import Dict, Optional, Type
+from typing import Optional
 
 from whois_parser.parsers.be import BeParser
 from whois_parser.parsers.uk import UkParser
@@ -6,20 +6,20 @@ from whois_parser.parsers.uk import UkParser
 from . import dataclasses
 from .parsers import BaseParser, JpParser
 
-PARSERS_MAP: Dict[str, Type[BaseParser]] = {
+PARSERS_MAP: dict[str, type[BaseParser]] = {
     "jp": JpParser,
     "uk": UkParser,
     "be": BeParser,
 }
 
 
-def get_default_parsers_map() -> Dict[str, Type[BaseParser]]:
+def get_default_parsers_map() -> dict[str, type[BaseParser]]:
     return PARSERS_MAP
 
 
 def get_parser(
-    tld: Optional[str], parsers_map: Dict[str, Type[BaseParser]]
-) -> Type[BaseParser]:
+    tld: Optional[str], parsers_map: dict[str, type[BaseParser]]
+) -> type[BaseParser]:
     if tld is None:
         return BaseParser
 
@@ -27,7 +27,7 @@ def get_parser(
 
 
 class WhoisParser:
-    def __init__(self, parsers_map: Dict[str, Type[BaseParser]] = PARSERS_MAP):
+    def __init__(self, parsers_map: dict[str, type[BaseParser]] = PARSERS_MAP):
         self.parsers_map = parsers_map
 
     def parse(

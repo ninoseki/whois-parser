@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List, Optional, Union
+from typing import Optional, Union
 
 from .. import dataclasses
 from .abstract import AbstractParser
@@ -198,9 +198,9 @@ class BaseParser(AbstractParser):
             organization=self._find_tech_organization(),
         )
 
-    def _find_statuses(self) -> List[str]:
+    def _find_statuses(self) -> list[str]:
         return self._find_all_by_keywords(["Domain Status", "domaintype"])
 
-    def _find_name_servers(self) -> List[str]:
+    def _find_name_servers(self) -> list[str]:
         values = self._find_all_by_keywords(["Name server", "Nserver", "Host Name"])
         return [value.lower() for value in values]
