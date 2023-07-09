@@ -2,11 +2,9 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional, Union
 
-from dataclasses_json import DataClassJsonMixin
-
 
 @dataclass
-class Contact(DataClassJsonMixin):
+class Contact:
     organization: Optional[str] = None
     email: Optional[str] = None
     name: Optional[str] = None
@@ -35,7 +33,7 @@ class Abuse:
 
 
 @dataclass
-class WhoisRecord(DataClassJsonMixin):
+class WhoisRecord:
     raw_text: str
 
     registrant: Registrant
