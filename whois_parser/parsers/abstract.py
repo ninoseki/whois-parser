@@ -4,7 +4,7 @@ from typing import Optional, Union
 
 from pyparsing import ParserElement
 
-from .. import dataclasses
+from .. import dataclasses, settings
 from .constants import ANY_CHARACTERS, DEILIMITER, SPACE_OR_TAB
 from .utils import build_common_prefix_pattern, find, find_all, parse_datetime
 
@@ -79,6 +79,7 @@ class AbstractParser(ABC):
             statuses=self._find_statuses(),
             tech=self._find_tech(),
             updated_at=self._find_updated_at(),
+            is_rate_limited=self._is_rate_limited(),
         )
 
     @abstractmethod
@@ -336,3 +337,11 @@ class AbstractParser(ABC):
                 return values
 
         return []
+
+    def _is_rate_limited(self) -> bool:
+        """Check whether rate limited or not.
+
+        Returns:
+            bool: Returns True if it's rate limited. Otherwise False.
+        """
+        return self.raw_text.strip() in settings.WHOIS_RATE_LIMIT_MESSAGES

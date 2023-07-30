@@ -50,3 +50,5 @@ class WhoisRecord:
     expires_at: Optional[Union[datetime, str]] = None
     registered_at: Optional[Union[datetime, str]] = None
     updated_at: Optional[Union[datetime, str]] = None
+
+    is_rate_limited: bool = False
