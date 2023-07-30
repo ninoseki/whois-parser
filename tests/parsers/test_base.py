@@ -16,3 +16,4 @@ def test_parse(parser: WhoisParser):
     assert isinstance(result.registered_at, datetime)
     assert isinstance(result.updated_at, datetime)
     assert len(result.name_servers) == 4
+    assert result.is_rate_limited is False
